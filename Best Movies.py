@@ -3,17 +3,17 @@ import psycopg2
 
 try:
     connection = psycopg2.connect(
-        database="postgres",
-        user="postgres",
-        password="2171985",
-        host="localhost",
-        port="5432"
+        database="",
+        user="",
+        password="",
+        host="",
+        port=""
     )
 
     if connection:
         print("Σύνδεση στη βάση δεδομένων πραγματοποιήθηκε επιτυχώς.")
 
-    api_key = 'c862ab2f'  # Αντικαταστήστε με το πραγματικό σας κλειδί πρόσβασης
+    api_key = ''  # Αντικαταστήστε με το πραγματικό σας κλειδί πρόσβασης (GIVE YOUR API KEY)
     movie = GetMovie(api_key=api_key)
 
     results = []
